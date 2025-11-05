@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umme Haani A — Portfolio</title>
+  <meta name="description" content="Umme Haani A — Metallurgical Engineering student | Projects: Advanced Solar Panel Efficiency, Industrial Waste Segregation" />
+  <style>
+    :root{--accent:#0b76ef; --muted:#6b7280; --bg:#ffffff; --card:#f8fafc}
+    html,body{height:100%;}
+    body{
+      margin:0; font-family:Inter, Roboto, system-ui, -apple-system, 'Segoe UI', Arial;
+      background:var(--bg); color:#0f172a; -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale; line-height:1.45;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      padding:24px; box-sizing:border-box;
+    }
+
+    .container{max-width:980px; margin:0 auto;}
+
+    header{display:flex; gap:16px; align-items:center; justify-content:space-between;}
+    .brand{display:flex; gap:16px; align-items:center}
+    .avatar{width:84px; height:84px; border-radius:14px; background:linear-gradient(135deg,var(--accent),#6ee7b7); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:28px}
+
+    h1{font-size:28px; margin:0}
+    .sub{color:var(--muted); margin-top:6px; font-size:15px}
+
+    nav{display:flex; gap:8px;}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; text-decoration:none; font-weight:600; font-size:14px; border:1px solid transparent}
+    .btn-primary{background:var(--accent); color:white}
+    .btn-ghost{background:transparent; color:var(--accent); border:1px solid rgba(11,118,239,0.12)}
+
+    main{margin-top:22px; display:grid; grid-template-columns:1fr 320px; gap:20px}
+
+    .card{background:var(--card); border-radius:14px; padding:18px; box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    .touch-friendly{padding:16px; border-radius:12px}
+
+    .section-title{font-size:16px; font-weight:700; margin:0 0 10px 0}
+    .meta{color:var(--muted); font-size:14px}
+
+    .projects{display:flex; flex-direction:column; gap:12px}
+    .project{background:white; border-radius:10px; padding:12px; border:1px solid #eef2ff}
+    .project h3{margin:0 0 6px 0; font-size:15px}
+    .project p{margin:0; color:var(--muted); font-size:14px}
+
+    .skills{display:flex; gap:8px; flex-wrap:wrap}
+    .skill{padding:8px 10px; border-radius:999px; border:1px solid rgba(11,118,239,0.12); font-weight:600}
+
+    .contact-list{display:flex; flex-direction:column; gap:8px}
+    .contact-item{display:flex; gap:10px; align-items:center}
+    .icon{width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; background:rgba(11,118,239,0.06); color:var(--accent); font-weight:700}
+
+    footer{margin-top:26px; color:var(--muted); font-size:13px}
+
+    /* small screens: stack columns */
+    @media (max-width:880px){
+      main{grid-template-columns:1fr;}
+      .avatar{width:76px;height:76px;font-size:24px}
+    }
+
+    /* touch targets larger */
+    a, button, .btn{touch-action:manipulation}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">UH</div>
+        <div>
+          <h1>Umme Haani A</h1>
+          <div class="sub">Metallurgical Engineering student • Government College of Engineering, Salem (2024–2028)</div>
+        </div>
+      </div>
+      <nav>
+        <a class="btn btn-primary" href="#contact" aria-label="Contact">Contact</a>
+        <a class="btn btn-ghost" href="#projects" aria-label="Projects">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card touch-friendly">
+          <p class="section-title">About Me</p>
+          <p class="meta">I am a Metallurgical Engineering undergraduate (2024–2028) interested in sustainable energy and industrial process improvements. I build practical projects focused on improving solar panel efficiency and industrial waste segregation systems.</p>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card touch-friendly">
+          <p class="section-title">Projects</p>
+          <div id="projects" class="projects">
+            <article class="project">
+              <h3>Advanced Solar Panel Efficiency</h3>
+              <p>Research + prototype exploring coatings, tracking angles, and MPPT tuning to boost real-world panel efficiency and energy yield. Includes data-logging and performance comparison under varied irradiance.</p>
+            </article>
+
+            <article class="project">
+              <h3>Industrial Waste Segregation System</h3>
+              <p>Design and implementation of a modular segregation workflow combining simple sensor-based sorting and process maps to reduce cross-contamination and improve recycling rates on small-to-mid scale plants.</p>
+            </article>
+
+            <article class="project">
+              <h3>Additional Notes</h3>
+              <p class="meta">Open to internships and collaborations related to materials, sustainability, and process optimization. Happy to share technical reports and datasets on request.</p>
+            </article>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card touch-friendly">
+          <p class="section-title">Education</p>
+          <p><strong>Government College of Engineering, Salem</strong><br><span class="meta">B.E. Metallurgical Engineering — Batch 2024–2028</span></p>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card touch-friendly">
+          <p class="section-title">Contact</p>
+          <div id="contact" class="contact-list">
+            <div class="contact-item">
+              <div class="icon">@</div>
+              <div>
+                <div style="font-weight:700">Email</div>
+                <div class="meta">ummehaania46@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon">in</div>
+              <div>
+                <div style="font-weight:700">LinkedIn</div>
+                <div class="meta"><a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon">GH</div>
+              <div>
+                <div style="font-weight:700">GitHub</div>
+                <div class="meta"><a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <p class="section-title">Skills</p>
+          <div class="skills">
+            <div class="skill">MS Word</div>
+            <div class="skill">MS Excel</div>
+            <div class="skill">C (programming)</div>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card touch-friendly">
+          <p class="section-title">Quick Links</p>
+          <div style="display:flex; gap:8px; flex-direction:column">
+     canv  <a class="btn btn-ghost" href="#projects">Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+            <a class="btn btn-ghost" href="#" onclick="downloadResume()">Download Resume</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Made by Umme Haani A • <span class="meta">Metallurgical Engineering | Government College of Engineering, Salem — 2024–2028</span></div>
+    </footer>
+  </div>
+
+  <script>
+    function downloadResume(){
+      // simple client-side resume generator (text-based). Replace this with a real PDF link if you have one.
+      const resumeText = `Umme Haani A\nMetallurgical Engineering Student (2024-2028)\nEmail: ummehaania46@gmail.com\n\nProjects:\n- Advanced Solar Panel Efficiency\n- Industrial Waste Segregation\n\nSkills: MS Word, MS Excel, C`;
+      const blob = new Blob([resumeText], {type:'text/plain'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'Umme_Haani_Resume.txt'; document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url) ;
+    }
+  </script>
+</body>
+</html>
+
+
